@@ -1,0 +1,24 @@
+<body>
+
+<p>Click the button to display an alert box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+
+<p id="demo"></p>
+
+<script>
+
+var clicks = 0;
+function myFunction() {
+    alert("Hello! I am an alert box!");
+	clicks += 1;
+    document.getElementById("demo").innerHTML = clicks;
+}
+</script>
+
+</body>
+
+
+
+	
