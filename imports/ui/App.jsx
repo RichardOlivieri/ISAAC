@@ -180,15 +180,7 @@ import dropdownMenu from './dropdownMenu.html';
 import button from './button.html';
 import togglebutton from './togglebutton.html';
 
-// 4.
 
-// 5.
-
-// 6.
-
-// 7.
-
-// App component - represents the whole app
 class App extends Component {
 	 handleSubmit(event) {
     event.preventDefault();
