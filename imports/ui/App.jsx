@@ -1,6 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import { createContainer } from 'meteor/react-meteor-data';
+import { createClass } from 'react-stateless';
+
 
 import { Tasks } from '../api/tasks.js';
 //import { GetUserList } from '../api/GetUserList.js';
@@ -176,6 +178,14 @@ class Button extends List {
 
 import dropdownMenu from './dropdownMenu.html';
 
+function ComponentA(dropdownMenu) {
+    return <div>{ dropdownMenu.name }</div>;
+}
+
+const Bar = function(sidebar) {
+  return <div>{props.sidebar}</div>;
+};
+
 // 3. Initial UI State
 import button from './button.html';
 import togglebutton from './togglebutton.html';
@@ -190,7 +200,7 @@ class App extends Component {
       hideCompleted: false,
     };
   }
-  
+	
 	 handleSubmit(event) {
     event.preventDefault();
  
