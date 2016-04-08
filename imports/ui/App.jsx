@@ -181,7 +181,16 @@ import button from './button.html';
 import togglebutton from './togglebutton.html';
 
 
+//3. Initial UI State Store
 class App extends Component {
+	constructor(button) {
+    super(button);
+
+    this.state = {
+      hideCompleted: false,
+    };
+  }
+  
 	 handleSubmit(event) {
     event.preventDefault();
  
