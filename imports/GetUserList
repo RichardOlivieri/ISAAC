@@ -1,5 +1,0 @@
-// A functional component using an ES2015 (ES6) arrow function:
-var Aquarium = (props) => {
-  var fish = getFish(props.species);
-  return <Tank>{fish}</Tank>;
-};
