@@ -9,5 +9,6 @@
     "react": "^0.14.8",
     "react-addons-pure-render-mixin": "^0.14.8",
     "react-dom": "^0.14.8"
+    "react-stateless": "^0.2.0"
   }
 }
