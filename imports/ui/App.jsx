@@ -102,7 +102,70 @@ class Filters extends React.Component {
 	}
   }
 
-	
+
+//DropdownMenu Components
+
+class Servers extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render(serverList) { 
+    return <ul> {this.Server.comments.map(showServers)} </ul>;
+  }
+  showServers({mainServer, showServers}) {
+    return <li>{mainServer}—{showServers}</li>;
+  }
+}
+
+class DataSchedule extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render(Scheduler) { 
+    return <ul> {this.Scheduler.comments.map(Scheduler)} </ul>;
+  }
+  showData ({Scheduler}) {
+    return <li>{DataList}</li>;
+  }
+}
+
+class DataLogs extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() { 
+    return <ul> {this.Logger.comments.map(Logger)} </ul>;
+  }
+  DataLogs({Logger}) {
+    return <li>{LoggedData}</li>;
+  }
+}
+
+
+class Security extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() { 
+    return <ul> {this.securitySystem.comments.map(Security)} </ul>;
+  }
+  Security({Firewall, Router, Switch, Backplane, Databases, userAccounts, dataCheck, userCheck, dataCenterCheck}) {
+    return <li>{securitySystem}—{Security}</li>;
+  }
+}
+
+
+class activeConnections extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() { 
+    return <ul> {this.activeConnections.comments.map(connections)} </ul>;
+  }
+  activeConnections({checkConnections, allow, disconnect, bypass}) {
+    return <li>{Connections}</li>;
+  }
+}
 	
 
 
